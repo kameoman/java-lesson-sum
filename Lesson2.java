@@ -84,11 +84,19 @@ public class Lesson2 {
     // }else{
     //   System.out.println("大変優秀です。");
     // }
-    System.out.println("1~10まで偶数を出力します");
-    for (int i = 1;i<=10;i++){
-      if (i % 2 == 0){
-        System.out.println(i);
-      }
-    }
+    // System.out.println("1~10まで偶数を出力します");
+    // for (int i = 1;i<=10;i++){
+    //   if (i % 2 == 0){
+    //     System.out.println(i);
+    //   }
+    // }
+    int num = 0;
+    int sum = 0;
+    do{
+      String str = br.readLine();
+      num = Integer.parseInt(str);
+      sum += num;
+    }while(num != 0);
+    System.out.println(sum);
   }
 }
