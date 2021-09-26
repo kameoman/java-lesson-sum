@@ -69,20 +69,26 @@ public class Lesson2 {
     // }else{
     //   System.out.println("不正解です");
     // }
-    System.out.println("1～5までの整数を入力してください");
-    String str1 = br.readLine();
-    int num1 = Integer.parseInt(str1);
-    System.out.println(num1);
-    if (num1 == 1){
-      System.out.println("もっと頑張りましょう");
-    }else if(num1 == 2){
-      System.out.println("もう少し頑張りましょう");
-    }else if(num1 == 3){
-      System.out.println("さらに上を目指しましょう");
-    }else if(num1 == 4){
-      System.out.println("大変よくできました。");
-    }else{
-      System.out.println("大変優秀です。");
+    // System.out.println("1～5までの整数を入力してください");
+    // String str1 = br.readLine();
+    // int num1 = Integer.parseInt(str1);
+    // System.out.println(num1);
+    // if (num1 == 1){
+    //   System.out.println("もっと頑張りましょう");
+    // }else if(num1 == 2){
+    //   System.out.println("もう少し頑張りましょう");
+    // }else if(num1 == 3){
+    //   System.out.println("さらに上を目指しましょう");
+    // }else if(num1 == 4){
+    //   System.out.println("大変よくできました。");
+    // }else{
+    //   System.out.println("大変優秀です。");
+    // }
+    System.out.println("1~10まで偶数を出力します");
+    for (int i = 1;i<=10;i++){
+      if (i % 2 == 0){
+        System.out.println(i);
+      }
     }
   }
 }
