@@ -48,17 +48,26 @@ public class Lesson2 {
       // }else{
         //   System.out.println(num + "は奇数です");
         // }
-    System.out.println("2つの整数を入力してください");
+    // System.out.println("2つの整数を入力してください");
+    // String str1 = br.readLine();
+    // String str2 = br.readLine();
+    // int num1 = Integer.parseInt(str1);
+    // int num2 = Integer.parseInt(str2);
+    // System.out.println(num1);
+    // System.out.println(num2);
+    // if (num1 < num2 ){
+    //   System.out.println(num1 +"より"+num2+ "は大きい値です");
+    // }else{
+    //   System.out.println(num1 +"より"+num2+ "は小さい値です");
+    // }
+    System.out.println("0～10までの整数を入力してください");
     String str1 = br.readLine();
-    String str2 = br.readLine();
     int num1 = Integer.parseInt(str1);
-    int num2 = Integer.parseInt(str2);
     System.out.println(num1);
-    System.out.println(num2);
-    if (num1 < num2 ){
-      System.out.println(num1 +"より"+num2+ "は大きい値です");
+    if (num1 > 0 && num1 < 10 ){
+      System.out.println("正解です");
     }else{
-      System.out.println(num1 +"より"+num2+ "は小さい値です");
+      System.out.println("不正解です");
     }
 
   }
