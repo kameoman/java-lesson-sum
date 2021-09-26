@@ -90,13 +90,20 @@ public class Lesson2 {
     //     System.out.println(i);
     //   }
     // }
-    int num = 0;
-    int sum = 0;
-    do{
-      String str = br.readLine();
-      num = Integer.parseInt(str);
-      sum += num;
-    }while(num != 0);
-    System.out.println(sum);
+    // int num = 0;
+    // int sum = 0;
+    // do{
+    //   String str = br.readLine();
+    //   num = Integer.parseInt(str);
+    //   sum += num;
+    // }while(num != 0);
+    // System.out.println(sum);
+    for (int i = 1;i <=9;i++){
+      for (int j =1; j <=9; j++){
+        System.out.print(i*j);
+        System.out.print("\t");
+      }
+      System.out.print("\n");
+    }
   }
 }
