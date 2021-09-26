@@ -25,20 +25,28 @@ public class Lesson2 {
     // System.out.println(5/3);
     // System.out.println(30%7);
     // System.out.println((7+32)/5);
-    String str1 = br.readLine();
-    String str2 = br.readLine();
-    String str3 = br.readLine();
-    String str4 = br.readLine();
-    String str5 = br.readLine();
-    int num1 = Integer.parseInt(str1);
-    int num2 = Integer.parseInt(str2);
-    int num3 = Integer.parseInt(str3);
-    int num4 = Integer.parseInt(str4);
-    int num5 = Integer.parseInt(str5);
-    int ans = num1+num2+num3+num4+num5;
-    System.out.println(ans);
-    double aves = (double)ans/5;
-    System.out.println(aves);
-
+    // String str1 = br.readLine();
+    // String str2 = br.readLine();
+    // String str3 = br.readLine();
+    // String str4 = br.readLine();
+    // String str5 = br.readLine();
+    // int num1 = Integer.parseInt(str1);
+    // int num2 = Integer.parseInt(str2);
+    // int num3 = Integer.parseInt(str3);
+    // int num4 = Integer.parseInt(str4);
+    // int num5 = Integer.parseInt(str5);
+    // int ans = num1+num2+num3+num4+num5;
+    // System.out.println(ans);
+    // double aves = (double)ans/5;
+    // System.out.println(aves);
+    System.out.println("整数を入力してください");
+    String str = br.readLine();
+    int num = Integer.parseInt(str);
+    System.out.println(num);
+    if (num % 2 == 0){
+      System.out.println(num + "は偶数です");
+    }else{
+      System.out.println(num + "は奇数です");
+    }
   }
 }
