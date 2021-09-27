@@ -105,11 +105,29 @@ public class Lesson2 {
     //   }
     //   System.out.print("\n");
     // }
-      for (int i=1; i<=5 ;i++){
-        for(int j = 0; j<i;j++){
-          System.out.print("*");
-        }
-        System.out.print("\n");
+      // for (int i=1; i<=5 ;i++){
+      //   for(int j = 0; j<i;j++){
+      //     System.out.print("*");
+      //   }
+      //   System.out.print("\n");
+      // }
+    System.out.println("5人のテストの点数を入力してください");
+    int[] ans = new int[5];
+    for (int i=0; i<5;i++){
+      String str = br.readLine();
+      int num = Integer.parseInt(str);
+      ans[i] = num;
+    }
+    for (int j=0; j<5; j++){
+      System.out.println(j+"番目の点数は"+ans[j]+"です。");
+    }
+    int intMax = ans[0];
+
+    for (int i =0; i<5;i++){
+      if(intMax<ans[i]){
+        intMax = ans[i];
       }
+    }
+    System.out.println("最高得点は、"+intMax+"です。");
   }
 }
